@@ -74,6 +74,9 @@ const About = () => {
           <motion.li className="inline-flex items-center gap-2 md:gap-3">
             <SiVisualstudiocode size={36} color="rgb(0,120,215)" /> VS Code
           </motion.li>
+          <motion.li className="inline-flex items-center gap-2 md:gap-3">
+            <img src={viteSVG} alt="Vite svg" /> Vite
+          </motion.li>
         </motion.ul>
       </div>
     </motion.section>

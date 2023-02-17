@@ -7,14 +7,12 @@ export default [
     title: "Your degree",
     start: 2021,
     end: 2025,
-    category: "Education",
     details: <EducationDetails />,
   },
   {
     title: "React Developer",
     start: 2022,
     end: null,
-    category: "Skill",
     details: <ReactDeveloperDetails />,
   },
 ];

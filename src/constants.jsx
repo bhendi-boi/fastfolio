@@ -1,10 +1,12 @@
 export const name = "Your name";
 
-export const imageSrc = "public/your-photo.webp";
+export const imageSrc = "./your-photo.webp";
 
 export const title = "Your title";
 
-export const assetSrc = "public/<filename>";
+// ?this is the path to your resume or cv
+export const assetSrc = "./<filename>";
+
 export const aboutMe =
   "A brief description about yourself. Stick to 150 characters max.";
 

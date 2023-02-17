@@ -19,7 +19,7 @@ module.exports = {
         "faded-gray": "#374151C8",
         "faded-white": "#F9FAFBC6",
 
-        // brand-color
+        // brand-color this is used for your name and scroll progress bar
         "brand-color": "#0d9488",
 
         // body text colors

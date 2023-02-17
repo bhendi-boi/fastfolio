@@ -18,11 +18,8 @@ const TimeLineItem = ({ title, start, end, details, category }) => {
         <h3 className="text-2xl font-medium text-sub-title dark:text-dark-sub-title">
           {title}
         </h3>
-        <span className="inline-flex gap-4 text-sm opacity-50">
-          {category}
-          <span>
-            {start} - {END}
-          </span>
+        <span className="text-sm opacity-50">
+          {start} - {END}
         </span>
       </div>
       <p className="leading-8">{details}</p>

@@ -21,6 +21,10 @@ A quicker and reliable way to create your portfolio website to showcase your wor
 
 Fastfolio provides you the ability to easily customize your personal portfolio. Follow along to find out how to use Fastfolio.
 
+## Requirements
+
+- Node v18.x
+
 ### Setup
 
 1. Fork this repositoy. Dont know how to fork a repositoy ? Find out [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).

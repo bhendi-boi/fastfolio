@@ -8,24 +8,24 @@ A quicker and reliable way to create your portfolio website to showcase your wor
 - **Tailwind CSS**
 - **Framer Motion**
 
-## Key Features
+## 🔑 Features
 
 - Modern stack
 - Intuitive to use
-- Scores 100% in web accessibility and performance
-- Easy to customize
+- Scores 100% in _web accessibility_ and _performance_
+- Easy to _customize_
 - Very _less_ bundle size (around 260 KB of js and 19 KB of css)
-- Out of the box support for dark mode
+- Out of the box support for _dark mode_
 
-## How to use ?
+## 🤔 How to use ?
 
 Fastfolio provides you the ability to easily customize your personal portfolio. Follow along to find out how to use Fastfolio.
 
 ### Setup
 
-1. Fork this repositoy. Dont know how to for a repositoy? Find out [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+1. Fork this repositoy. Dont know how to fork a repositoy ? Find out [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
-2. Clone the fork onto your machine.
+2. Clone the fork to your machine.
 
 3. Run `npm install` and finally `npm run dev` to start the dev server.
 
@@ -48,7 +48,7 @@ Fastfolio provides you the ability to easily customize your personal portfolio. 
 | imageURL  | add path to the image here for eg if the image filename is "one.webp" add "./one.webp"                  |
 | githubURL | url of the github repo of your project. If your project doesnot have a github repo set this key as null |
 
-4. Now this is the final step. Open `TimeLine.jsx` file in `assets` folder. This is similar to `Projects.jsx` file discussed above. This file exports an array of objects and each object represent your work positions. You can follow the examples given in file to fill your details.
+5. Now this is the final step. Open `TimeLine.jsx` file in `assets` folder. This is similar to `Projects.jsx` file discussed above. This file exports an array of objects and each object represent your work positions. You can follow the examples given in file to fill your details.
 
 | key     | value                                                                                                                                             |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +57,7 @@ Fastfolio provides you the ability to easily customize your personal portfolio. 
 | end     | year till which you worked in a particular position. If you are still working in a position set this key as null                                  |
 | details | a brief description of your work at that position. It has to be a ReactNode. If you want to use links in between use the TeritiaryLink component. |
 
-#### TeritiaryLink is just a styled `a` tag. Donot forget to pass a href to it.
+**TeritiaryLink** is just a styled `a` tag. Donot forget to pass a href to it.
 
 Ex:
 

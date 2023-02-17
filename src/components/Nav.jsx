@@ -3,6 +3,7 @@ import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import useTheme from "../useTheme";
 import MobileNav from "./MobileNav";
+import { name } from "../constants";
 
 const Nav = ({
   handleScrollToSection,
@@ -44,7 +45,7 @@ const Nav = ({
             onClick={handleScrollToTop}
             className="text-4xl font-semibold tracking-wider text-brand-color dark:font-medium font-name dark:text-neutral-50 hover:cursor-pointer"
           >
-            Jyothikrishna
+            {name}
           </h1>
         </div>
         <button aria-label="Toggle theme" className="mx-2">

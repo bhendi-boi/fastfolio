@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import Title from "./Title";
 import viteSVG from "../assets/vite.svg";
 import figmaSVG from "../assets/figma.svg";
+import { aboutMe, name } from "../constants";
 const About = () => {
   const variants = {
     initial: {
@@ -44,9 +45,9 @@ const About = () => {
       <p>
         Hello 👋, I am{" "}
         <span className="px-2 text-lg font-semibold tracking-wide font-title text-faded-gray uppercase dark:text-faded-white">
-          Jyothikrishna
+          {name}
         </span>{" "}
-        from Chirala, AP. I love making interactive and responsive UI.
+        . {aboutMe}
       </p>
       <div className="mt-2">
         <p className="mb-2 font-semibold tracking-wide text-sub-title dark:text-dark-sub-title">
@@ -62,24 +63,7 @@ const About = () => {
           }}
           className="grid gap-4 pt-2 pb-8 text-lg text-gray-700 md:grid-cols-2 dark:text-neutral-200 md:text-xl"
         >
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <FaReact size={36} color="rgb(20,158,202)" /> React
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <SiFirebase size={36} className="text-amber-300" /> Firebase
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <SiTailwindcss size={36} className="text-cyan-500" /> Tailwind CSS
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <SiReactrouter size={36} className="text-red-500" /> React Router
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <img src={figmaSVG} alt="Figma svg" width={27} height={27} /> Figma
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <SiFramer size={36} className="text-[#7039d7]" /> Framer Motion
-          </motion.li>
+          {/* //? add the tools you use here  */}
           <motion.li className="inline-flex items-center gap-2 md:gap-3">
             <FaGitAlt size={36} className="text-red-600" /> Git
           </motion.li>
@@ -89,9 +73,6 @@ const About = () => {
           </motion.li>
           <motion.li className="inline-flex items-center gap-2 md:gap-3">
             <SiVisualstudiocode size={36} color="rgb(0,120,215)" /> VS Code
-          </motion.li>
-          <motion.li className="inline-flex items-center gap-2 md:gap-3">
-            <img src={viteSVG} alt="vite svg" /> Vite
           </motion.li>
         </motion.ul>
       </div>

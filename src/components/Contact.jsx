@@ -1,3 +1,9 @@
+import {
+  devcommunityUserName,
+  githubProfile,
+  gmailID,
+  linkedinProfile,
+} from "../constants";
 import ScrollButton from "./ScrollButton";
 
 const Contact = ({ scrollRef, handleScrollToTop }) => {
@@ -12,7 +18,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           <a
             aria-label="github-icon"
             target="_blank"
-            href="https://github.com/bhendi-boi"
+            href={githubProfile}
             title="Github Profile"
             className="transition hover:scale-110 hover:text-blue-400"
           >
@@ -23,7 +29,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           <a
             aria-label="linkedin-icon"
             target="_blank"
-            href="https://www.linkedin.com/in/jyothikrishnaSajja"
+            href={linkedinProfile}
             title="Linked-in Profile"
             className="transition hover:scale-110 hover:text-blue-400"
           >
@@ -34,7 +40,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           <a
             aria-label="gmail-icon"
             target="_blank"
-            href="mailto:bhendiisgreen@gmail.com"
+            href={`mailto:${gmailID}`}
             title="mail me"
             className="transition hover:scale-110 hover:text-blue-400"
           >
@@ -45,7 +51,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           <a
             aria-label="devcommunity-icon"
             target="_blank"
-            href="https://dev.to/bhendi"
+            href={`dev.to/${devcommunityUserName}`}
             title="Dev.to profile"
             className="transition hover:scale-110 hover:text-blue-400"
           >

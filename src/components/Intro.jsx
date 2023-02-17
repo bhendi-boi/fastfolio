@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import DownloadbleButton from "./DownloadbleButton";
-const imageSrc =
-  "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+import { assetSrc, imageSrc, name, title } from "../constants";
 
 const Intro = () => {
   return (
@@ -20,15 +19,15 @@ const Intro = () => {
         <picture className="overflow-hidden bg-yellow-300 rounded-full h-52 w-52 md:h-72 md:w-72">
           <img
             src={imageSrc}
-            alt="Jyothikrishna image"
+            alt={`${name}'s image`}
             className="object-cover aspect-square"
           />
         </picture>
         <span className="text-3xl font-medium tracking-wide text-center font-name dark:text-white text-sub-title">
-          React Dev
+          {title}
         </span>
       </div>
-      <DownloadbleButton text="FULL CV AS PDF" assetSrc="public/cv.pdf" />
+      <DownloadbleButton text="FULL CV AS PDF" assetSrc={assetSrc} />
     </motion.section>
   );
 };

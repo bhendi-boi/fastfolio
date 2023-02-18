@@ -16,14 +16,14 @@ const Projects = ({ scrollRef }) => {
     >
       <Title name="Projects" />
       <motion.div className="grid gap-12 my-4 sm:place-items-center last:pb-8 lg:hidden">
-        {data.map((project, index) => {
+        {data.map((project) => {
           return (
             <MobileProjectCard
-              layoutId={index}
               key={project.name}
               name={project.name}
               stack={project.stack}
               url={project.url}
+              githubURL={project.githubURL}
               details={project.details}
               imageURL={project.imageURL}
               setSelectedId={setSelectedId}
@@ -40,7 +40,7 @@ const Projects = ({ scrollRef }) => {
               name={project.name}
               stack={project.stack}
               url={project.url}
-              githubUrl={project.github}
+              githubUrl={project.githubURL}
               details={project.details}
               imageURL={project.imageURL}
               setSelectedId={setSelectedId}

@@ -49,22 +49,26 @@ const ProjectCard = ({
             })}
           </ul>
           <div className="flex justify-end gap-4">
-            <a
-              href={url}
-              target="_blank"
-              rel="norefer"
-              className="inline-flex items-center gap-2 px-2 py-1 font-semibold tracking-wider text-gray-800 transition-colors duration-500 bg-transparent border border-gray-800 rounded-md outline-none cursor-pointer lg:px-4 hover:font-semibold hover:bg-transparent opacity-60 border-opacity-60 hover:opacity-100 hover:border-opacity-100 dark:text-neutral-100 dark:border-neutral-100"
-            >
-              Visit <BiLinkExternal />
-            </a>
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="norefer"
-              className="inline-flex items-center gap-2 px-2 py-1 font-medium tracking-wider transition-colors duration-500 bg-gray-800 border border-gray-800 rounded-md outline-none cursor-pointer lg:px-4 hover:font-semibold hover:bg-transparent text-neutral-100 hover:text-gray-800 hover:border-gray-800 dark:bg-neutral-100 dark:hover:bg-transparent dark:border-neutral-100 dark:text-gray-800 dark:font-semibold dark:hover:text-neutral-100"
-            >
-              View <FiGithub />
-            </a>
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="norefer"
+                className="inline-flex items-center gap-2 px-2 py-1 font-semibold tracking-wider text-gray-800 transition-colors duration-500 bg-transparent border border-gray-800 rounded-md outline-none cursor-pointer lg:px-4 hover:font-semibold hover:bg-transparent opacity-60 border-opacity-60 hover:opacity-100 hover:border-opacity-100 dark:text-neutral-100 dark:border-neutral-100"
+              >
+                Visit <BiLinkExternal />
+              </a>
+            )}
+            {githubUrl && (
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="norefer"
+                className="inline-flex items-center gap-2 px-2 py-1 font-medium tracking-wider transition-colors duration-500 bg-gray-800 border border-gray-800 rounded-md outline-none cursor-pointer lg:px-4 hover:font-semibold hover:bg-transparent text-neutral-100 hover:text-gray-800 hover:border-gray-800 dark:bg-neutral-100 dark:hover:bg-transparent dark:border-neutral-100 dark:text-gray-800 dark:font-semibold dark:hover:text-neutral-100"
+              >
+                View <FiGithub />
+              </a>
+            )}
           </div>
         </div>
       </div>

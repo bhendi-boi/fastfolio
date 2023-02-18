@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FiGithub } from "react-icons/fi";
 import TeritiaryLink from "./TeritiaryLink";
 const MobileProjectCard = ({
   name,
@@ -7,7 +8,7 @@ const MobileProjectCard = ({
   details,
   url,
   imageURL,
-  layoutId,
+  githubURL,
 }) => {
   const [expanded, setExpanded] = useState(false);
   function handleClick() {
@@ -15,7 +16,6 @@ const MobileProjectCard = ({
   }
   return (
     <motion.article
-      layoutId={layoutId}
       initial={{ y: "10%", z: "50px", scale: 0.85 }}
       whileInView={{ y: 0, z: 0, scale: 1 }}
       animate={{ height: "auto" }}
@@ -38,10 +38,18 @@ const MobileProjectCard = ({
         <h3 className="my-4 text-3xl font-medium text-center text-gray-900 font-title dark:text-neutral-50">
           {name}
         </h3>
-        {/* // TODO add github and view project  */}
-        <span className="mx-6 text-xs md:text-sm">
-          <TeritiaryLink href={url}>{url}</TeritiaryLink>
-        </span>
+        <div className="flex mx-6">
+          {url && (
+            <span className="text-xs md:text-sm flex-1">
+              <TeritiaryLink href={url}>{url}</TeritiaryLink>
+            </span>
+          )}
+          {githubURL && (
+            <TeritiaryLink href={githubURL}>
+              <FiGithub />
+            </TeritiaryLink>
+          )}
+        </div>
         <motion.p
           onClick={handleClick}
           className={

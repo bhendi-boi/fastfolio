@@ -1,6 +1,7 @@
 # Fastfolio
 
 A quicker and reliable way to create your portfolio website to showcase your work.
+![Fastfolio ]("https://raw.github.com/bhendi-boi/fastfolio/main/media/Fastfolio.png")
 
 ## Tech Stack
 

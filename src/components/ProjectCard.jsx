@@ -23,7 +23,7 @@ const ProjectCard = ({
         damping: 60,
         stiffness: 900,
       }}
-      className="grid mx-2 overflow-hidden rounded-lg shadow-2xl project-card dark:shadow-sm bg-neutral-50 dark:bg-dark-card-background"
+      className="grid mx-2 overflow-hidden rounded-lg shadow-2xl project-card dark:shadow-sm bg-neutral-50 dark:bg-dark-card-background min-h-[18rem]"
     >
       <picture className="flex flex-col gap-2 bg-yellow-300">
         <img
@@ -37,7 +37,7 @@ const ProjectCard = ({
           {name}
         </h3>
         {/* // TODO add github and view project  */}
-        <motion.p className={"mx-6 min-h-[78px]"}>{details}</motion.p>
+        <motion.p className={"mx-6 min-h-[78px] flex-1"}>{details}</motion.p>
         <div className="flex gap-4 mx-6 mt-4 mb-6 text-sm lg:text-base">
           <ul className="flex items-center justify-center flex-1 gap-4 text-sm text-teritiary-link dark:text-dark-teritiary-link font-title">
             {stack.map((item) => {

@@ -39,9 +39,9 @@ Fastfolio provides you the ability to easily customize your personal portfolio. 
 
 2. Now open the `constants.jsx` file which is present in `src` folder. You will find bunch of variables being exported. Fill them with your details. You can add your resume / cv as pdf in `public` folder and fill the `assetSrc` variable with approproate path.
 
-3. Head over to `About.jsx` file in `src` folder. You will find a `motion.ul` in it. Add the tools and frameworks you use here. I have added 3 tools which are common for every developer. To add your own items go to [react icons](https://react-icons.github.io/react-icons) website. Search for the icon you need and once you find the icon you are looking for copy on of the `motion.li` and swap the icons. If you are unable to find the icon you are looking for on react-icons website, you can download svg for that tool into `assets` folder.
+3. Head over to `About.jsx` file in `src` folder. You will find a `motion.ul` in it. Add the tools and frameworks you use here. I have added 3 tools which are common for every developer. To add your own items go to [react icons](https://react-icons.github.io/react-icons) website. Search for the icon you need and once you find the icon you are looking for copy one of the `motion.li` and swap the icons. If you are unable to find the icon you are looking for on react-icons website, you can download svg for that tool/framework.
 
-4. Now open the `Projects.jsx` file which is present in `assets` folder. You will find an array of objects being exported there. Think of this as a database of your website. Each object represent a project of yours. We recommend you to use images in `webp` format because they take less time to load. Use [this](https://www.freeconvert.com/jpg-to-webp) online tool to convert your jpg images to webp. You can follow the examples given in the file to fill your details.
+4. Now open the `Projects.jsx` file which is present in `assets` folder. You will find an array of objects being exported there. Think of this as a database of your website. Each object represent a project of yours. I'd advice you to use images in `webp` format because they take less time to load. Use [this](https://www.freeconvert.com/jpg-to-webp) online tool to convert your jpg images to webp. You can follow the examples given in the file to fill your details.
 
 | **key**   | **value**                                                                                               |
 | --------- | ------------------------------------------------------------------------------------------------------- |
@@ -69,7 +69,9 @@ Ex:
 <TeritiaryLink href={githubProfile}>Github</TeritiaryLink>
 ```
 
-At this point of time if you open you browser and visit `localhost:5173` you will see the preview of your portfolio. Make sure that everything looks fine.
+At this point of time if you open you browser and visit `localhost:5173` you will see the preview of your portfolio or as I like to call it _fastfolio_. Make sure that everything looks fine. If you are good with the colors and fonts being used you can skip the next step.
+
+## 🎨 Customizing
 
 Don't like the colors and fonts being used? Feel free to customize them by opening `tailwind.config.cjs` file.
 We recommend to stick with the default color palette of tailwind. You can find it [here](https://tailwindcss.com/docs/customizing-colors#default-color-palette).

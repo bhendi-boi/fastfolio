@@ -15,7 +15,7 @@ A quicker and reliable way to create your portfolio website to showcase your wor
 - Intuitive to use
 - Scores 100% in _web accessibility_ and _performance_
 - Easy to _customize_
-- Very _less_ bundle size (around 260 KB of js and 19 KB of css)
+- Very _less_ bundle size (around 90 KB of js and 4.5 KB of css (gzipped))
 - Out of the box support for _dark mode_
 
 ## 🤔 How to use ?

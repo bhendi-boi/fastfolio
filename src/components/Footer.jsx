@@ -9,7 +9,7 @@ const Footer = ({ handleScrollToTop, scrollRef }) => {
       <p className="inline-flex items-center justify-center text-center text-faded-gray dark:text-faded-white">
         &copy; {new Date().getFullYear()}{" "}
         <span className="px-1">
-          <TeritiaryLink href="https://githb.com/bhendi-boi">
+          <TeritiaryLink href="https://github.com/bhendi-boi">
             Jyothikrishna
           </TeritiaryLink>
         </span>{" "}

@@ -20,7 +20,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href={githubProfile}
             title="Github Profile"
-            className="transition hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400 focus:scale-110 focus:text-blue-400"
           >
             Github
           </a>
@@ -31,7 +31,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href={linkedinProfile}
             title="Linked-in Profile"
-            className="transition hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400 focus:scale-110 focus:text-blue-400"
           >
             Linkedin
           </a>
@@ -42,7 +42,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href={`mailto:${gmailID}`}
             title="mail me"
-            className="transition hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400 focus:scale-110 focus:text-blue-400"
           >
             Gmail
           </a>
@@ -53,7 +53,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href={`dev.to/${devcommunityUserName}`}
             title="Dev.to profile"
-            className="transition hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400 focus:scale-110 focus:text-blue-400"
           >
             Dev.to
           </a>
